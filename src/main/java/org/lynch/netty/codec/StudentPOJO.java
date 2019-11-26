@@ -27,7 +27,7 @@ public final class StudentPOJO {
      * <code>string name = 2;</code>
      * @return The name.
      */
-    String getName();
+    java.lang.String getName();
     /**
      * <code>string name = 2;</code>
      * @return The bytes for name.
@@ -51,14 +51,14 @@ public final class StudentPOJO {
       name_ = "";
     }
 
-    @Override
+    @java.lang.Override
     @SuppressWarnings({"unused"})
-    protected Object newInstance(
+    protected java.lang.Object newInstance(
         UnusedPrivateParameter unused) {
       return new Student();
     }
 
-    @Override
+    @java.lang.Override
     public final com.google.protobuf.UnknownFieldSet
     getUnknownFields() {
       return this.unknownFields;
@@ -69,7 +69,7 @@ public final class StudentPOJO {
         throws com.google.protobuf.InvalidProtocolBufferException {
       this();
       if (extensionRegistry == null) {
-        throw new NullPointerException();
+        throw new java.lang.NullPointerException();
       }
       com.google.protobuf.UnknownFieldSet.Builder unknownFields =
           com.google.protobuf.UnknownFieldSet.newBuilder();
@@ -87,7 +87,7 @@ public final class StudentPOJO {
               break;
             }
             case 18: {
-              String s = input.readStringRequireUtf8();
+              java.lang.String s = input.readStringRequireUtf8();
 
               name_ = s;
               break;
@@ -116,7 +116,7 @@ public final class StudentPOJO {
       return StudentPOJO.internal_static_Student_descriptor;
     }
 
-    @Override
+    @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
       return StudentPOJO.internal_static_Student_fieldAccessorTable
@@ -135,19 +135,19 @@ public final class StudentPOJO {
     }
 
     public static final int NAME_FIELD_NUMBER = 2;
-    private volatile Object name_;
+    private volatile java.lang.Object name_;
     /**
      * <code>string name = 2;</code>
      * @return The name.
      */
-    public String getName() {
-      Object ref = name_;
-      if (ref instanceof String) {
-        return (String) ref;
+    public java.lang.String getName() {
+      java.lang.Object ref = name_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
       } else {
-        com.google.protobuf.ByteString bs =
+        com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         name_ = s;
         return s;
       }
@@ -158,11 +158,11 @@ public final class StudentPOJO {
      */
     public com.google.protobuf.ByteString
         getNameBytes() {
-      Object ref = name_;
-      if (ref instanceof String) {
-        com.google.protobuf.ByteString b =
+      java.lang.Object ref = name_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         name_ = b;
         return b;
       } else {
@@ -171,7 +171,7 @@ public final class StudentPOJO {
     }
 
     private byte memoizedIsInitialized = -1;
-    @Override
+    @java.lang.Override
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized == 1) return true;
@@ -181,7 +181,7 @@ public final class StudentPOJO {
       return true;
     }
 
-    @Override
+    @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (id_ != 0) {
@@ -193,7 +193,7 @@ public final class StudentPOJO {
       unknownFields.writeTo(output);
     }
 
-    @Override
+    @java.lang.Override
     public int getSerializedSize() {
       int size = memoizedSize;
       if (size != -1) return size;
@@ -211,8 +211,8 @@ public final class StudentPOJO {
       return size;
     }
 
-    @Override
-    public boolean equals(final Object obj) {
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
       if (obj == this) {
        return true;
       }
@@ -229,7 +229,7 @@ public final class StudentPOJO {
       return true;
     }
 
-    @Override
+    @java.lang.Override
     public int hashCode() {
       if (memoizedHashCode != 0) {
         return memoizedHashCode;
@@ -315,7 +315,7 @@ public final class StudentPOJO {
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
-    @Override
+    @java.lang.Override
     public Builder newBuilderForType() { return newBuilder(); }
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
@@ -323,13 +323,13 @@ public final class StudentPOJO {
     public static Builder newBuilder(StudentPOJO.Student prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
-    @Override
+    @java.lang.Override
     public Builder toBuilder() {
       return this == DEFAULT_INSTANCE
           ? new Builder() : new Builder().mergeFrom(this);
     }
 
-    @Override
+    @java.lang.Override
     protected Builder newBuilderForType(
         com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
       Builder builder = new Builder(parent);
@@ -347,7 +347,7 @@ public final class StudentPOJO {
         return StudentPOJO.internal_static_Student_descriptor;
       }
 
-      @Override
+      @java.lang.Override
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
         return StudentPOJO.internal_static_Student_fieldAccessorTable
@@ -370,7 +370,7 @@ public final class StudentPOJO {
                 .alwaysUseFieldBuilders) {
         }
       }
-      @Override
+      @java.lang.Override
       public Builder clear() {
         super.clear();
         id_ = 0;
@@ -380,18 +380,18 @@ public final class StudentPOJO {
         return this;
       }
 
-      @Override
+      @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
         return StudentPOJO.internal_static_Student_descriptor;
       }
 
-      @Override
+      @java.lang.Override
       public StudentPOJO.Student getDefaultInstanceForType() {
         return StudentPOJO.Student.getDefaultInstance();
       }
 
-      @Override
+      @java.lang.Override
       public StudentPOJO.Student build() {
         StudentPOJO.Student result = buildPartial();
         if (!result.isInitialized()) {
@@ -400,7 +400,7 @@ public final class StudentPOJO {
         return result;
       }
 
-      @Override
+      @java.lang.Override
       public StudentPOJO.Student buildPartial() {
         StudentPOJO.Student result = new StudentPOJO.Student(this);
         result.id_ = id_;
@@ -409,39 +409,39 @@ public final class StudentPOJO {
         return result;
       }
 
-      @Override
+      @java.lang.Override
       public Builder clone() {
         return super.clone();
       }
-      @Override
+      @java.lang.Override
       public Builder setField(
           com.google.protobuf.Descriptors.FieldDescriptor field,
-          Object value) {
+          java.lang.Object value) {
         return super.setField(field, value);
       }
-      @Override
+      @java.lang.Override
       public Builder clearField(
           com.google.protobuf.Descriptors.FieldDescriptor field) {
         return super.clearField(field);
       }
-      @Override
+      @java.lang.Override
       public Builder clearOneof(
           com.google.protobuf.Descriptors.OneofDescriptor oneof) {
         return super.clearOneof(oneof);
       }
-      @Override
+      @java.lang.Override
       public Builder setRepeatedField(
           com.google.protobuf.Descriptors.FieldDescriptor field,
-          int index, Object value) {
+          int index, java.lang.Object value) {
         return super.setRepeatedField(field, index, value);
       }
-      @Override
+      @java.lang.Override
       public Builder addRepeatedField(
           com.google.protobuf.Descriptors.FieldDescriptor field,
-          Object value) {
+          java.lang.Object value) {
         return super.addRepeatedField(field, value);
       }
-      @Override
+      @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
         if (other instanceof StudentPOJO.Student) {
           return mergeFrom((StudentPOJO.Student)other);
@@ -465,12 +465,12 @@ public final class StudentPOJO {
         return this;
       }
 
-      @Override
+      @java.lang.Override
       public final boolean isInitialized() {
         return true;
       }
 
-      @Override
+      @java.lang.Override
       public Builder mergeFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -503,7 +503,7 @@ public final class StudentPOJO {
        * @return This builder for chaining.
        */
       public Builder setId(int value) {
-
+        
         id_ = value;
         onChanged();
         return this;
@@ -513,27 +513,27 @@ public final class StudentPOJO {
        * @return This builder for chaining.
        */
       public Builder clearId() {
-
+        
         id_ = 0;
         onChanged();
         return this;
       }
 
-      private Object name_ = "";
+      private java.lang.Object name_ = "";
       /**
        * <code>string name = 2;</code>
        * @return The name.
        */
-      public String getName() {
-        Object ref = name_;
-        if (!(ref instanceof String)) {
+      public java.lang.String getName() {
+        java.lang.Object ref = name_;
+        if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          String s = bs.toStringUtf8();
+          java.lang.String s = bs.toStringUtf8();
           name_ = s;
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
       /**
@@ -542,11 +542,11 @@ public final class StudentPOJO {
        */
       public com.google.protobuf.ByteString
           getNameBytes() {
-        Object ref = name_;
+        java.lang.Object ref = name_;
         if (ref instanceof String) {
-          com.google.protobuf.ByteString b =
+          com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (String) ref);
+                  (java.lang.String) ref);
           name_ = b;
           return b;
         } else {
@@ -559,11 +559,11 @@ public final class StudentPOJO {
        * @return This builder for chaining.
        */
       public Builder setName(
-          String value) {
+          java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
-
+  
         name_ = value;
         onChanged();
         return this;
@@ -573,7 +573,7 @@ public final class StudentPOJO {
        * @return This builder for chaining.
        */
       public Builder clearName() {
-
+        
         name_ = getDefaultInstance().getName();
         onChanged();
         return this;
@@ -589,18 +589,18 @@ public final class StudentPOJO {
     throw new NullPointerException();
   }
   checkByteStringIsUtf8(value);
-
+        
         name_ = value;
         onChanged();
         return this;
       }
-      @Override
+      @java.lang.Override
       public final Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.setUnknownFields(unknownFields);
       }
 
-      @Override
+      @java.lang.Override
       public final Builder mergeUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.mergeUnknownFields(unknownFields);
@@ -622,7 +622,7 @@ public final class StudentPOJO {
 
     private static final com.google.protobuf.Parser<Student>
         PARSER = new com.google.protobuf.AbstractParser<Student>() {
-      @Override
+      @java.lang.Override
       public Student parsePartialFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -635,12 +635,12 @@ public final class StudentPOJO {
       return PARSER;
     }
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Parser<Student> getParserForType() {
       return PARSER;
     }
 
-    @Override
+    @java.lang.Override
     public StudentPOJO.Student getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
@@ -649,7 +649,7 @@ public final class StudentPOJO {
 
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_Student_descriptor;
-  private static final
+  private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_Student_fieldAccessorTable;
 
@@ -660,7 +660,7 @@ public final class StudentPOJO {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    String[] descriptorData = {
+    java.lang.String[] descriptorData = {
       "\n\rStudent.proto\"#\n\007Student\022\n\n\002id\030\001 \001(\005\022\014" +
       "\n\004name\030\002 \001(\tB\rB\013StudentPOJOb\006proto3"
     };
@@ -673,7 +673,7 @@ public final class StudentPOJO {
     internal_static_Student_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_Student_descriptor,
-        new String[] { "Id", "Name", });
+        new java.lang.String[] { "Id", "Name", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

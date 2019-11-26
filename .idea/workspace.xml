@@ -2,15 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c8e784bb-7d40-478e-b1ec-a8eea8fed12a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/lynch/netty/codec/NettyClientHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/lynch/netty/codec/NettyCodecClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/lynch/netty/codec/NettyCodecServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/lynch/netty/codec/NettyServerHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/lynch/netty/codec/Student.proto" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/lynch/netty/codec/StudentPOJO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/lynch/netty/codec2/MyDataInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/lynch/netty/codec2/NettyClientHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/lynch/netty/codec2/NettyCodec2Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/lynch/netty/codec2/NettyCodec2Server.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/lynch/netty/codec2/NettyServerHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/lynch/netty/codec2/Student.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/lynch/netty/inouthandler/client/ClientHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/lynch/netty/inouthandler/client/ClientInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/lynch/netty/inouthandler/client/TestClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/lynch/netty/inouthandler/common/ByteToLongDecoder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/lynch/netty/inouthandler/common/LongToByteEncoder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/lynch/netty/inouthandler/common/MyReplayingDecoder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/lynch/netty/inouthandler/server/ServerHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/lynch/netty/inouthandler/server/ServerInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/lynch/netty/inouthandler/server/TestServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/proto/Student.proto" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/lynch/netty/codec/StudentPOJO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/lynch/netty/codec/StudentPOJO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/lynch/netty/heartbeat/MyServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/lynch/netty/heartbeat/MyServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/lynch/netty/heartbeat/MyServer$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/lynch/netty/heartbeat/MyServer$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/lynch/netty/heartbeat/MyServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/lynch/netty/heartbeat/MyServer.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,6 +34,20 @@
   </component>
   <component name="CodeStyleSettingsInfer">
     <option name="done" value="true" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
   </component>
   <component name="FavoritesManager">
     <favorites_list name="nettydemo" />
@@ -56,11 +84,13 @@
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="PropertiesComponent">
+    <property name="GenProtobuf.javaLoc" value=".\" />
+    <property name="GenProtobuf.quickGen" value="Java" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="extract.method.default.visibility" value="private" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/org/lynch/netty" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/org/lynch/netty/codec2" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -68,13 +98,18 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Problems" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="org.lynch.netty.inouthandler" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\java\netty.demo\src\main\java\org\lynch\netty\codec2" />
+      <recent name="E:\java\netty.demo\src\main\proto" />
       <recent name="G:\java\netty.demo\src\main\java\org\lynch\netty" />
     </key>
   </component>
@@ -90,13 +125,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.GroupChatClient">
-    <configuration name="FinalTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.lynch.netty.groupchat.FinalTest" />
+  <component name="RunManager" selected="Application.TestClient">
+    <configuration name="NettyCodec2Client" type="Application" factoryName="Application" singleton="false" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.lynch.netty.codec2.NettyCodec2Client" />
       <module name="netty.demo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.lynch.netty.groupchat.*" />
+          <option name="PATTERN" value="org.lynch.netty.codec2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -104,12 +139,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GroupChatClient" type="Application" factoryName="Application" singleton="false" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.lynch.netty.groupchat.GroupChatClient" />
+    <configuration name="NettyCodec2Server" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.lynch.netty.codec2.NettyCodec2Server" />
       <module name="netty.demo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.lynch.netty.groupchat.*" />
+          <option name="PATTERN" value="org.lynch.netty.codec2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -117,12 +152,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GroupChatServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.lynch.netty.groupchat.GroupChatServer" />
+    <configuration name="NettyCodecServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.lynch.netty.codec.NettyCodecServer" />
       <module name="netty.demo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.lynch.netty.groupchat.*" />
+          <option name="PATTERN" value="org.lynch.netty.codec.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -130,12 +165,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.lynch.netty.heartbeat.MyServer" />
+    <configuration name="TestClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.lynch.netty.inouthandler.client.TestClient" />
       <module name="netty.demo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.lynch.netty.heartbeat.*" />
+          <option name="PATTERN" value="org.lynch.netty.inouthandler.common.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -143,12 +178,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NettyByteBuf" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.lynch.netty.buf.NettyByteBuf" />
+    <configuration name="TestServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.lynch.netty.inouthandler.server.TestServer" />
       <module name="netty.demo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.lynch.netty.buf.*" />
+          <option name="PATTERN" value="org.lynch.netty.inouthandler.common.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -157,19 +192,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.NettyByteBuf" />
-      <item itemvalue="Application.FinalTest" />
-      <item itemvalue="Application.GroupChatServer" />
-      <item itemvalue="Application.GroupChatClient" />
-      <item itemvalue="Application.MyServer" />
+      <item itemvalue="Application.NettyCodecServer" />
+      <item itemvalue="Application.NettyCodec2Server" />
+      <item itemvalue="Application.NettyCodec2Client" />
+      <item itemvalue="Application.TestServer" />
+      <item itemvalue="Application.TestClient" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.GroupChatClient" />
-        <item itemvalue="Application.MyServer" />
-        <item itemvalue="Application.GroupChatServer" />
-        <item itemvalue="Application.FinalTest" />
-        <item itemvalue="Application.NettyByteBuf" />
+        <item itemvalue="Application.TestClient" />
+        <item itemvalue="Application.TestServer" />
+        <item itemvalue="Application.NettyCodec2Client" />
+        <item itemvalue="Application.NettyCodec2Server" />
+        <item itemvalue="Application.NettyCodecServer" />
       </list>
     </recent_temporary>
   </component>
@@ -189,6 +224,9 @@
       <workItem from="1574496317287" duration="24433000" />
       <workItem from="1574645359025" duration="18302000" />
       <workItem from="1574694758658" duration="685000" />
+      <workItem from="1574728936599" duration="1082000" />
+      <workItem from="1574730229204" duration="534000" />
+      <workItem from="1574730830007" duration="15022000" />
     </task>
     <servers />
   </component>
@@ -200,7 +238,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -240,16 +280,16 @@
           <option name="timeStamp" value="17" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/lynch/netty/groupchat/GroupChatServerHandler.java</url>
-          <line>57</line>
-          <option name="timeStamp" value="18" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/lynch/netty/groupchat/GroupChatServerHandler.java</url>
-          <line>55</line>
-          <option name="timeStamp" value="20" />
+          <url>file://$PROJECT_DIR$/src/main/java/org/lynch/netty/inouthandler/server/ServerHandler.java</url>
+          <line>12</line>
+          <option name="timeStamp" value="27" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="rs" language="JAVA" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>
