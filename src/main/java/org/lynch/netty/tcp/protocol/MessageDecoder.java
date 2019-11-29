@@ -3,7 +3,6 @@ package org.lynch.netty.tcp.protocol;
 import io.netty.buffer.ByteBuf;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.handler.codec.ReplayingDecoder;
-import org.lynch.netty.heartbeat.MyServer;
 
 import java.util.List;
 
@@ -16,7 +15,7 @@ public class MessageDecoder extends ReplayingDecoder<Void> {
         byte[] content = new byte[(int)length];
         in.readBytes(content);
         // 封装为Message对象 放入out ,传给下一个handler处理
-        Message message = new Message(length, content);
+        MessageProtocol message = new MessageProtocol(length, content);
         out.add(message);
 
     }

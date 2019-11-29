@@ -1,18 +1,15 @@
 package org.lynch.netty.tcp.protocol;
 
-import io.netty.buffer.ByteBuf;
-import io.netty.buffer.Unpooled;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.SimpleChannelInboundHandler;
-import io.netty.util.CharsetUtil;
 
 import java.nio.charset.Charset;
 
-public class MyClientHandler extends SimpleChannelInboundHandler<Message> {
+public class MyClientHandler extends SimpleChannelInboundHandler<MessageProtocol> {
 
     private int count;
     @Override
-    protected void channelRead0(ChannelHandlerContext ctx, Message msg) throws Exception {
+    protected void channelRead0(ChannelHandlerContext ctx, MessageProtocol msg) throws Exception {
 
         long length = msg.getLength();
         byte[] content = msg.getContent();
@@ -30,7 +27,7 @@ public class MyClientHandler extends SimpleChannelInboundHandler<Message> {
             int length = content.length;
 
             // 创建协议包
-            Message message = new Message(length,content);
+            MessageProtocol message = new MessageProtocol(length,content);
 //            ByteBuf byteBuf = Unpooled.copiedBuffer("hello,server" + i, CharsetUtil.UTF_8);
             ctx.writeAndFlush(message);
         }

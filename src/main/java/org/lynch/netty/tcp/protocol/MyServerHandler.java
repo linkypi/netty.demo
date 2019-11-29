@@ -3,14 +3,14 @@ import	java.nio.charset.Charset;
 
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.SimpleChannelInboundHandler;
-import java.nio.charset.Charset;
+
 import java.util.UUID;
 
-public class MyServerHandler extends SimpleChannelInboundHandler<Message> {
+public class MyServerHandler extends SimpleChannelInboundHandler<MessageProtocol> {
 
     private int count;
     @Override
-    protected void channelRead0(ChannelHandlerContext ctx, Message msg) throws Exception {
+    protected void channelRead0(ChannelHandlerContext ctx, MessageProtocol msg) throws Exception {
         long length = msg.getLength();
         byte[] content = msg.getContent();
 
@@ -23,7 +23,7 @@ public class MyServerHandler extends SimpleChannelInboundHandler<Message> {
         String response = UUID.randomUUID().toString();
         byte[] buffer = response.getBytes("utf-8");
         int size = buffer.length;
-        Message message = new Message(size, buffer);
+        MessageProtocol message = new MessageProtocol(size, buffer);
         ctx.writeAndFlush(message);
     }
 

@@ -8,7 +8,7 @@ import lombok.Data;
  */
 @Data
 @AllArgsConstructor
-public class Message {
+public class MessageProtocol {
     private long length;
     private byte[] content;
 
