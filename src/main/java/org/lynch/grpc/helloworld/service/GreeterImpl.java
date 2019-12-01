@@ -1,7 +1,7 @@
 package org.lynch.grpc.helloworld.service;
 
-import org.lynch.grpc.helloworld.HelloReply;
-import org.lynch.grpc.helloworld.HelloRequest;
+import org.lynch.grpc.helloworld.service.HelloReply;
+import org.lynch.grpc.helloworld.service.HelloRequest;
 
 public class GreeterImpl extends GreeterGrpc.GreeterImplBase {
     @Override

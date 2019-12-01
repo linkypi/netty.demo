@@ -4,6 +4,8 @@ import io.grpc.ManagedChannel;
 import io.grpc.ManagedChannelBuilder;
 import io.grpc.StatusRuntimeException;
 import org.lynch.grpc.helloworld.service.GreeterGrpc;
+import org.lynch.grpc.helloworld.service.HelloReply;
+import org.lynch.grpc.helloworld.service.HelloRequest;
 
 import java.util.concurrent.TimeUnit;
 import java.util.logging.Level;

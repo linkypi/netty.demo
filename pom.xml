@@ -99,6 +99,13 @@
         <artifactId>protobuf-maven-plugin</artifactId>
         <version>0.6.1</version>
         <configuration>
+<!--          <outputBaseDirectory>xxx</outputBaseDirectory>-->
+<!--          <outputDirectory>main/java</outputDirectory>-->
+          <!--默认值-->
+          <!--<outputDirectory>${project.build.directory}/generated-sources/protobuf/java</outputDirectory>-->
+          <outputDirectory>${project.build.sourceDirectory}</outputDirectory>
+          <!--设置是否在生成java文件之前清空outputDirectory的文件，默认值为true，设置为false时也会覆盖同名文件-->
+          <clearOutputDirectory>false</clearOutputDirectory>
           <protocArtifact>com.google.protobuf:protoc:3.10.0:exe:${os.detected.classifier}</protocArtifact>
           <pluginId>grpc-java</pluginId>
           <pluginArtifact>io.grpc:protoc-gen-grpc-java:1.25.0:exe:${os.detected.classifier}</pluginArtifact>
