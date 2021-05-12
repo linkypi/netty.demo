@@ -10,7 +10,7 @@
 #maven ignore
 target/
 build/
-
+.idea/
 #eclipse ignore
 .settings/
 .project

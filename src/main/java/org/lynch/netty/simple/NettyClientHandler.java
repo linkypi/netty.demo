@@ -1,6 +1,5 @@
 package org.lynch.netty.simple;
 
-import com.sun.org.apache.bcel.internal.ExceptionConstants;
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.Unpooled;
 import io.netty.channel.ChannelHandlerContext;
